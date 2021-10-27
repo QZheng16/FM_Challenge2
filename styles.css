@@ -1,0 +1,93 @@
+
+
+:root{
+    /* primary colors */
+    --primary-dark-blue-color: hsl(233, 47%, 7%);
+    --primary-dark-desat-blue-color: hsl(244, 38%, 16%);
+    --primary-soft-violet-color: hsl(277, 64%, 61%);
+
+    /* neutral colors */
+    --neutral-white-color: hsl(0, 0%, 100%);
+    --neutral-slight-white1-color: hsla(0, 0%, 100%, 0.75);
+    --neutral-slight-white2-color: hsla(0, 0%, 100%, 0.6);
+}
+
+
+body{
+    height: 100vh;
+    background-color: var(--primary-dark-blue-color);
+
+}
+
+h1{
+    color: var(--neutral-white-color);
+}
+
+p{
+    color: var(--neutral-slight-white2-color);
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+}
+
+
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--primary-soft-violet-color);
+
+    width: 100%;
+    height: auto;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
