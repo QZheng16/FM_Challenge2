@@ -7,6 +7,18 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="styles.css">
   
+  <!-- Font Import -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Red+Hat+Display:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca:wght@400;500;700&family=Red+Hat+Display:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+
+
+
   <title>Frontend Mentor | Stats preview card component</title>
 
 </head>
@@ -15,34 +27,29 @@
 
       <img class="card-img" src="images/image-header-mobile.jpg" alt="">
       
-      <h1>Get insights that help your business grow.</h1>
+      
+      <h1>Get <span>insights</span>  that help your business grow.</h1>
 
       <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer 
         experience, and overall efficiency.</p> 
       
-      <div class="stat-company">
-        <h1>10k+</h1>
-        <p>COMPANIES</p> 
+      <div class = "stats">
+        <div class="stat-company">
+          <h2>10k+</h2>
+          <p>COMPANIES</p> 
+        </div>
+      
+        <div class="stat-templates">
+          <h2>314</h2>
+          <p>TEMPLATES</p> 
+        </div>
+      
+        <div class="stat-queries">
+          <h2>12m+</h2>
+          <p>QUERIES</p> 
+        </div>
       </div>
-    
-      <div class="stat-templates">
-        <h1>314</h1>
-        <p>TEMPLATES</p> 
-      </div>
-    
-      <div class="stat-queries">
-        <h1>12m+</h1>
-        <p>QUERIES</p> 
-      </div>
+
   </main>
-
-  <footer>
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Qihang Zheng</a>.
-    </div>
-
-  </footer>
-
 </body>
 </html>
