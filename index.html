@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="styles.css">
   
   <!-- Font Import -->
@@ -16,18 +18,19 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca:wght@400;500;700&family=Red+Hat+Display:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 
-
-
-
   <title>Frontend Mentor | Stats preview card component</title>
 
 </head>
 <body>
   <main class = "card">
       <div class="card-img">
-        <img  srcset="images/image-header-mobile.jpg 400w" size="(max-width: 400px)" src="images/image-header-desktop.jpg" alt="">
+       <picture >
+        <source srcset="images/image-header-desktop.jpg 900w"
+                media="(min-width: 900px)">
+        <img src="images/image-header-mobile.jpg" alt="" aria-hidden="true" />
+      </picture>       
       </div>
-      
+
       <div class = "card-content">
         <h1>Get <span>insights</span>  that help your business grow.</h1>
 
@@ -50,7 +53,6 @@
             <p>QUERIES</p> 
           </div>        
         </div>
-
       </div>
 
 
