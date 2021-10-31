@@ -1,6 +1,4 @@
-
-
-:root{
+:root {
     /* primary colors */
     --primary-dark-blue-color: hsl(233, 47%, 7%);
     --primary-dark-desat-blue-color: hsl(244, 38%, 16%);
@@ -12,8 +10,7 @@
     --neutral-slight-white2-color: hsla(0, 0%, 100%, 0.6);
 }
 
-
-body{
+body {
     height: 100vh;
     background-color: var(--primary-dark-blue-color);
     font-family: 'Inter', sans-serif;
@@ -21,59 +18,114 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    
-
 }
 
-h1{
+h1 {
     color: var(--neutral-white-color);
-    font-size: 1.7rem;
+    font-size: 1.6rem;
 }
 
-h2{
+h2 {
     color: var(--neutral-white-color);
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    margin-bottom: 0px;
 }
 
-main h1{
+.card-content h1 {
     margin: 10% 10% 0%;
 }
 
-main p{
-    margin: 5% 12% 10%;
+.card-content>* {
+    margin: 5% 13% 5%;
 }
 
-h1 span{
+h1 span {
     color: var(--primary-soft-violet-color);
 }
-    
 
-p{
+p {
     color: var(--neutral-slight-white2-color);
-    font-family: 'Lexend Deca', sans-serif; 
+    font-family: 'Lexend Deca', sans-serif;
     font-size: .85rem;
     line-height: 1.3rem;
+    margin-top: 10px;
 }
 
-img{
-    width: 100%; 
-    
+.stats {
+    display: flex;
+    flex-direction: column;
 }
 
+.stats div p {
+    font-size: .7rem;
+}
 
+img {
+    max-width: 100%;
+    opacity: 50%;
+    display: block;
+}
 
+.card-img {
+    background-color: rgba(106, 3, 165, 0.651);
+    width: 100%;
+}
 
-.card{
+.card {
     background-color: var(--primary-dark-desat-blue-color);
     overflow: hidden;
-
     margin: 0px;
     border-radius: 10px;
     text-align: center;
-
     width: 90%;
-    height: 80%;
+    height: 100%;
+    max-width: 400px;
+    max-height: 750px;
+    display: flex;
+    flex-direction: column;
+}
 
+@media (min-width:900px) {
+
+    .card {
+        flex-direction: row-reverse;
+        width: 90%;
+        height: 60%;
+        max-width: 1000px;
+        max-height: 400px;
+    }
+
+    .card-content{
+        width: 100%;
+        padding-right: 5%;
+        
+    }
+    .card-content>* {
+        text-align: left;
+        margin-left: 10%; 
+    }
+
+    .card-content p {
+        line-height: 1.5rem;
+    }
+
+    .card-content h1 {
+        font-size: 2rem;
+    }
+
+    img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .stats {
+        flex-direction: row;
+        gap: 4rem;
+    }
+
+    .stats div {
+        margin-top: 5%;
+    }
 }
 
 
@@ -119,5 +171,11 @@ img{
 
 
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
